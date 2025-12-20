@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Stack Sans Notch", sans-serif;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: black;
+}
+main .elements {
+  height: 100%;
+  width: 100%;
+  background-color: #234C6A;
+  display: flex;
+  justify-content: center;
+  gap: 2vw;
+  padding: 2vh 2vw;
+}
+main .elements .elems {
+  height: 350px;
+  width: 300px;
+  background-color: black;
+  border-radius: 15px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+main .elements .elems p {
+  font-size: 26px;
+  font-weight: 400;
+  color: white;
+  padding: 1vh 1vw;
+  mix-blend-mode: difference;
+  font-family: "Stack Sans Notch", sans-serif;
+}
+main .elements #daily_planner {
+  background-image: url("https://i.pinimg.com/736x/f6/3e/2b/f63e2b644a9f5bc50470698d1b67fd13.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main .elements #pomodoro {
+  background-image: url("https://i.pinimg.com/736x/63/86/58/6386580a5686f7716ee74badc450e951.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main .elements #todolist {
+  background-image: url("https://i.pinimg.com/736x/24/51/50/245150d3136728d71bd7da2f2ecf915c.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main .elements #quotes {
+  background-image: url("https://i.pinimg.com/736x/1f/c4/b4/1fc4b4c9b7ceb3bfecdb12dea94240f8.jpg");
+  background-size: cover;
+  background-position: center;
+}
+main .elements #daily_goals {
+  background-image: url("https://i.pinimg.com/736x/e2/ea/84/e2ea84bc638b1720dcff55b5686b639f.jpg");
+  background-position: center;
+  background-size: cover;
+}
+main .elements .elems:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}/*# sourceMappingURL=style.css.map */
