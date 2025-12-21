@@ -24,6 +24,7 @@ main .elements {
   justify-content: center;
   gap: 2vw;
   padding: 2vh 2vw;
+  position: absolute;
 }
 main .elements .elems {
   height: 350px;
@@ -71,4 +72,12 @@ main .elements .elems:hover {
   cursor: pointer;
   transform: scale(1.05);
   transition: all 0.3s ease-in-out;
+}
+main .elem_expand .elem_exp_view {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  display: none;
+  font-size: 100px;
+  background-color: #234C6A;
 }/*# sourceMappingURL=style.css.map */
