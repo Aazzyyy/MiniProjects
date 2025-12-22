@@ -96,10 +96,10 @@ main .elem_expand .elem_exp_view .back {
   font-family: "Stack Sans Notch", sans-serif;
 }
 main .elem_expand .elem_exp_view .back:active {
-  transform: scale(0.95);
+  scale: 0.95;
 }
 
-.elem_expand h2 {
+.elem_expand #headings {
   font-size: 44px;
   color: #E3E3E3;
   font-family: "Stack Sans Notch", sans-serif;
@@ -111,19 +111,83 @@ main .elem_expand .elem_exp_view .back:active {
   width: 80%;
   height: 70vh;
   display: block;
-  background-color: #234C6A;
   border-radius: 15px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  justify-content: space-between;
 }
 .elem_expand #TOdoExpandView .ToDoContainer .addTask {
+  border-radius: 15px;
   height: 100%;
-  width: 40%;
-  background-color: blue;
+  width: 32%;
+  background-color: #456882;
+  display: flex;
+  flex-direction: column;
+  font-family: "Stack Sans Notch", sans-serif;
+}
+.elem_expand #TOdoExpandView .ToDoContainer .addTask input {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  text-align: center;
+}
+.elem_expand #TOdoExpandView .ToDoContainer .addTask textarea {
+  margin: 0 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  outline: none;
+  height: 150px;
+  text-align: center;
+}
+.elem_expand #TOdoExpandView .ToDoContainer .addTask .addBtn {
+  margin: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  font-size: 18px;
+  background-color: #234C6A;
+  color: white;
+  cursor: pointer;
+}
+.elem_expand #TOdoExpandView .ToDoContainer .addTask .addBtn:active {
+  scale: 0.95;
 }
 .elem_expand #TOdoExpandView .ToDoContainer .allTask {
+  border-radius: 15px;
   height: 100%;
-  width: 60%;
-  background-color: green;
+  width: 66%;
+  background-color: #456882;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.elem_expand #TOdoExpandView .ToDoContainer .allTask #tasks {
+  height: 15%;
+  width: 95%;
+  border-radius: 10px;
+  border: none;
+  background-color: #234C6A;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 0 20px;
+}
+.elem_expand #TOdoExpandView .ToDoContainer .allTask #taskName {
+  font-size: 24px;
+  padding-top: none;
+}
+.elem_expand #TOdoExpandView .ToDoContainer .allTask #markDone {
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background-color: #47dd7c;
+  color: white;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */

@@ -35,28 +35,46 @@
         </section>
         <section class="elem_expand">
             <div class="elem_exp_view" id="DailyPlannerExpandView">
-                <button class="back"><i class="ri-close-line"></i></button>  
-                <h2>Your Daily Planner</h2>   
+                <button class="back"><i class="ri-close-line"></i></button>
+                <h2 id="headings" >Your Daily Planner</h2>
             </div>
             <div class="elem_exp_view" id="TOdoExpandView">
                 <button class="back"><i class="ri-close-line"></i></button>
-                <h2>Your To Do List</h2>   
+                <h2 id="headings">Your To Do List</h2>
                 <div class="ToDoContainer">
-                    <div class="addTask"></div>
-                    <div class="allTask"></div>
+                    <div class="addTask">
+                        <input type="text" placeholder="Enter Task Name" />
+                        <textarea name="todo-description" placeholder="Add Task Description"
+                            id="todo-description"></textarea>
+                        <button class="addBtn">Add Task</i></button>
+                    </div>
+                    <div class="allTask">
+                        <div id="tasks">
+                            <h2  id="taskName">Your Task</h2>
+                            <button id="markDone">Mark As Done</button>
+                        </div>
+                        <div id="tasks">
+                            <h2 id="taskName">Your Task</h2>
+                            <button id="markDone">Mark As Done</button>
+                        </div>
+                        <div id="tasks">
+                            <h2 id="taskName">Your Task</h2>
+                            <button id="markDone">Mark As Done</button>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="elem_exp_view">
                 <button class="back"><i class="ri-close-line"></i></button>
-                <h2>Your Motivations booster</h2>   
+                <h2 id="headings" >Your Motivations booster</h2>
             </div>
             <div class="elem_exp_view">
                 <button class="back"><i class="ri-close-line"></i></button>
-                <h2>Pomodoro Timer</h2>
+                <h2 id="headings" >Pomodoro Timer</h2>
             </div>
             <div class="elem_exp_view">
                 <button class="back"><i class="ri-close-line"></i></button>
-                <h2>Your Daily Goals</h2>
+                <h2 id="headings" >Your Daily Goals</h2>
             </div>
         </section>
     </main>
