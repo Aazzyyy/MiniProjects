@@ -19,7 +19,7 @@ main {
 main .elements {
   height: 100%;
   width: 100%;
-  background-color: #234C6A;
+  background-color: #1B3C53;
   display: flex;
   justify-content: center;
   gap: 2vw;
@@ -34,6 +34,7 @@ main .elements .elems {
   display: flex;
   align-items: end;
   justify-content: end;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
 }
 main .elements .elems p {
   font-size: 26px;
@@ -79,5 +80,50 @@ main .elem_expand .elem_exp_view {
   width: 100%;
   display: none;
   font-size: 100px;
+  background-color: #1B3C53;
+  color: white;
+}
+main .elem_expand .elem_exp_view .back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  padding: 10px 14px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: #E3E3E3;
+  color: #2b4152;
+  cursor: pointer;
+  font-family: "Stack Sans Notch", sans-serif;
+}
+main .elem_expand .elem_exp_view .back:active {
+  transform: scale(0.95);
+}
+
+.elem_expand h2 {
+  font-size: 44px;
+  color: #E3E3E3;
+  font-family: "Stack Sans Notch", sans-serif;
+  text-align: center;
+  padding-top: 20px;
+}
+.elem_expand #TOdoExpandView .ToDoContainer {
+  margin-top: 80px;
+  width: 80%;
+  height: 70vh;
+  display: block;
   background-color: #234C6A;
+  border-radius: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+.elem_expand #TOdoExpandView .ToDoContainer .addTask {
+  height: 100%;
+  width: 40%;
+  background-color: blue;
+}
+.elem_expand #TOdoExpandView .ToDoContainer .allTask {
+  height: 100%;
+  width: 60%;
+  background-color: green;
 }/*# sourceMappingURL=style.css.map */
